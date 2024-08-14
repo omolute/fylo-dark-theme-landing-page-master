@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+:root{
+    --Dark-blue1: hsl(217, 28%, 15%);
+    --Dark-blue2: hsl(218, 28%, 13%);
+    --Dark-blue3: hsl(216, 53%, 9%);
+    --Dark-blue4: hsl(219, 30%, 18%);
+    --Blue: hsl(198, 60%, 50%);
+    --Cyan: hsl(176, 68%, 64%);
+    --Light-red: hsl(0, 100%, 63%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Dark-blue1);
+    font-size: 14px;
+    color: var(--White);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    align-items: center;
+}
+.nav_text{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.nav_text > a:active{
+    text-decoration: underline;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+.intro{
+    text-align: center;
+    background: no-repeat  url(./images/bg-curvy-desktop.svg) -120px 570px ;
+    padding-bottom: 12rem;
+}
+h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+.intro > h1{
+    margin: 2rem 20%;
+}
+.intro  > p{
+    margin: 0 30.5%;
+    margin-bottom: 2rem;
+    font-size: medium;
+}
+.intro > a{
+    background-color: var(--Blue);
+    border-radius: 1.5rem;
+    padding: 0.8rem 4.5rem;
+}
+.intro > a:active{
+    background-color: var(--Cyan);
+}
+.second_db{
+    background-color: var(--Dark-blue2);
+}
+.advantages{
+    padding: 0.1rem 0;
+}
+.row{
+    display: flex;
+    text-align: center;
+    margin:  5rem 16%;
+    gap: 10%;
+}
+.row_content >  img{
+    margin-bottom: 1rem;
+}
+.row_content >  p:nth-of-type(1){
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: medium;
+}
+.productive{
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    gap: 3rem;
+}
+.product_content > p:nth-of-type(1){
+    margin: 1rem 0;
+}
+.product_content > p:nth-of-type(2){
+    margin-bottom: 1rem;
+}
+.product_content a{
+    display: flex;
+    gap: 0.3rem;
+    color: var(--Cyan);
+    align-items: center;
+}
+.product_content a:active{
+    color: var(--White);
+}
+.profile{
+    display: flex;
+    padding: 5rem 3.5rem 20rem 3.5rem;
+    gap: 2rem;
+    background: url(./images/bg-quotes.png) no-repeat 50px 45px  var(--Dark-blue2);
+}
+.profile_details{
+    background-color: var(--Dark-blue4);
+    padding: 2rem;
+}
+.profile_pix{
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    font-size: smaller;
+    align-items: center;
+}
+.profile_pix > img{
+    width: 10%;
+    height: fit-content;
+    border-radius: 50%;
+}
+.profile_pix > div > p:nth-of-type(1){
+   font-weight: 700;
+   font-size: small;
+   margin-bottom: 0.2rem;
+}
+.footer{
+    background-color: var(--Dark-blue3);
+    padding: 3rem;
+}
+.access{
+    text-align: center;
+    background-color: var(--Dark-blue1);
+    margin: -12rem 20% 5rem 20%;
+    padding: 3rem;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.access input{
+    padding: 0.8rem 3rem 0.8rem 1rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    width: 22rem;
+}
+.access a{
+    background-color: var(--Blue);
+    border-radius: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    height: fit-content;
+    margin-top: 1rem;
+}
+.access a:active{
+    background-color: var(--Cyan);
+}
+.access > div > div > p{
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: small;
+    color: var(--Light-red);
+    display: none;
+}
+.contact{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.contact_lorem{
+    width: 27%;
+    display:flex;
+    gap: 1rem;
+}
+.contact_lorem img{
+    height: fit-content;
+}
+.contact_phone{
+    display: flex;
+    gap: 1rem;
+}
+.contact_phone > img{
+    margin-bottom: 1rem;
+}
+.contact_link{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact_link a:active{
+    font-weight: 700;
+}
+.contact_socials{
+    display: flex;
+    gap: 1rem;
+    /* transition: 300ms; */
+}
+/* .contact_socials svg:hover{
+    transition: 30s;
+} */
+hr{
+    width: 9.2rem;
+}
+@media(max-width: 480px){
+    header{
+        padding: 2rem;
+    }
+    header > img{
+        width: 25%;
+        height: fit-content;
+    }
+    .nav_text{
+        width: 50%;
+        font-size: small;
+    }
+    .intro{
+        background: no-repeat  url(./images/bg-curvy-mobile.svg) 0px 250px;
+        padding-bottom: 0;
+        margin-bottom: -12rem;
+    }
+    .intro > img{
+        width: 80%;
+        height: fit-content;
+        margin-top: 4rem;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .intro > h1{
+        margin: 2rem 5%;
+        line-height: 35px;
+    }
+    .intro  > p{
+        margin: 0 12%;
+        margin-bottom: 2rem;
+        font-size: small;
+    }
+    .intro > a{
+        border-radius: 1.5rem;
+        padding: 1rem 25%;
+    }
+    .advantages{
+        padding-top: 20rem;
+    }
+    .row{
+        flex-direction: column;
+        gap: 5rem;
+        margin:  5rem 16%;
+    }
+    .productive{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .productive > img{
+        width: 80%;
+        height: fit-content;
+    }
+    .product_content > h1{
+        font-size: 20px;
+    }
+    .profile{
+        flex-direction: column;
+        padding: 5rem 2.5rem 20rem 2.5rem;
+        background: url(./images/bg-quotes.png) no-repeat 35px 45px  var(--Dark-blue2);
+    }
+    .profile_details{
+        padding: 1rem;
+    }
+    .profile_details > p:nth-of-type(1){
+        font-size: small;
+    }
+    .access{
+        margin: -12rem 0 5rem 0;
+        padding: 1rem;
+    }
+    .access > h1{
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .access > p{
+        font-size: small;
+    }
+    .access > div{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .access input{
+        padding: 0.8rem 3rem 0.8rem 1rem;
+        width: 100%;
+        font-size: small;
+    }
+    .access a{
+        font-size: small;
+        font-weight: 700;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact_lorem{
+        width: 100%;
+        align-items:start;
+        margin-bottom: 1rem;
+    }
+    .contact_link{
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+    .contact_socials{
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
